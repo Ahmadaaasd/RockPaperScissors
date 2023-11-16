@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&family=League+Spartan:wght@700&family=Red+Hat+Text:wght@700&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>RockPaperScissors</title>
+</head>
+<body>
+  <main class="normal" id="blur">
+    <div class="header">
+      <div class="RPS">
+        <p class="rock">ROCK</p>
+        <p class="paper">PAPER</p>
+        <p class="scissors">SCISSORS</p>
+      </div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div class="scoreContanier">
+        <p class="score">SCORE</p>
+        <p class="scoreValue js-score">0</p>
+      </div>
+    </div>
+    <div class="buttonsContanier" id="buttonsContanier">
+      <div class="triangle"><img class="triImg" src="images/bg-triangle.svg"></div>
+      <div class="RPcontanier">
+        <button class="paperButton"><img class="paperimg" src="images/icon-paper.svg"></button>
+        <button class="scissorButton"><img class="scissorimg" src="images/icon-scissors.svg"></button>
+        <button class="rockButton"><img class="rockimg" src="images/icon-rock.svg"></button>
+      </div>
+    </div>
+  </main>
+  <div id="popup">
+    <div class="RX">
+      <div class="rulesPopup">RULES</div>
+      <button onclick="popup()" class="X">&#xd7</button>
+    </div>
+    <img class="rulesimg" src="images/image-rules.svg" alt="">
+  </div>
+  <button onclick="popup()" class="rules">RULES</button>
+  <script src="main.js"></script>
+</body>
+</html>
